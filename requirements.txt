@@ -1,9 +1,6 @@
 pandas
-time
-logging
 functools
 streamlit
-os
 matplotlib
 seaborn
 altair
