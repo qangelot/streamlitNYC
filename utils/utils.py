@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 # Misc logger setup so a debug log statement gets printed on stdout.
 logger.setLevel("INFO")
-handler = logging.FileHandler('exec_time_logs.txt', mode='a', delay=False, errors=None)
+handler = logging.FileHandler('exec_time_logs.txt', mode='a', delay=False) # , errors=None
 log_format = "%(asctime)s %(levelname)s -- %(message)s"
 formatter = logging.Formatter(log_format)
 handler.setFormatter(formatter)
