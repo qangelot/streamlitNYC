@@ -32,7 +32,7 @@ def timed(func):
 @timed
 @st.cache(persist=True)
 def preprocess_data():
-    df = pd.read_csv('../ny-trips-data.csv')  
+    df = pd.read_csv('./ny-trips-data.csv')  
     lowercase = lambda x: str(x).lower()
     df.rename(lowercase, axis="columns", inplace=True)
     
